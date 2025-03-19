@@ -25,30 +25,6 @@ All microservices (both public and private) will comunicate between them using g
 - Apache Pulsar
 - Postgres
 
-## Diagram
-
-/*
-graphQL   +-------+
-  <-------+       |
-          | Auth  |
-          +------++
-            ^    |
-            |    |
-            |    |                +--------+           +---------+
-            |    v      gRPC      |        | gRPC      |         |
-          +-+-----+<--------------+ Worker +---------->|Product  |
- graphQL  |       |               +--------+           +---------+
-  <-------+ Job   |                   ^
-          +-------+|                  |
-                   |                  |
-                   |                  |
-                   |   produce    +---+----+
-                   +------------->|        |
-                                  | Pulsar |
-                                  |        |
-                                  +--------+
- */
-
 ## Start project
 
 > **_NOTE:_** todo
@@ -58,7 +34,7 @@ graphQL   +-------+
 [] Finalize docker compose
 [] Fix CICD lint
 [] Add tests
-[] Finalize Auth service using jwt
+[x] Finalize Auth service using jwt
 [] Create Job Microservice
 [] Comunicate between Auth and Job using gRPC
 [] ...

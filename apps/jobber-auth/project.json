@@ -21,7 +21,7 @@
     "serve": {
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
-      "dependsOn": ["build", "^generate-types"],
+      "dependsOn": ["build", "generate-types"],
       "options": {
         "buildTarget": "jobber-auth:build",
         "runBuildTargetDependencies": true
@@ -36,7 +36,7 @@
       }
     },
     "test": {
-      "dependsOn": ["^generate-types"],
+      "dependsOn": ["generate-types"],
       "options": {
         "passWithNoTests": true
       }
