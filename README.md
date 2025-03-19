@@ -31,10 +31,10 @@ All microservices (both public and private) will comunicate between them using g
 
 ## TODO
 
-[] Finalize docker compose
-[] Fix CICD lint
-[] Add tests
-[x] Finalize Auth service using jwt
-[] Create Job Microservice
-[] Comunicate between Auth and Job using gRPC
-[] ...
+- [] Finalize docker compose
+- [] Fix CICD lint
+- [] Add tests
+- [x] Finalize Auth service using jwt
+- [] Create Job Microservice
+- [] Comunicate between Auth and Job using gRPC
+- [] ...
